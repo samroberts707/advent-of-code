@@ -6,4 +6,4 @@ The challenges can be completed in any programming language I choose. I will pro
 There will be 2 challenges released everyday, but you can only get access to the second challenge of the day once completing the first. Each challenge is worth one star, my target is to get at least 25 stars.
 
 ## :star2: Stars :star2: 
-2019: 0
+2019: 1
