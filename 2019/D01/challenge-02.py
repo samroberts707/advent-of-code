@@ -17,8 +17,6 @@ What is the sum of the fuel requirements for all of the modules on your spacecra
 import math
 
 def calcFuelForMass(mass):
-    if(isinstance(mass, int) == False):
-        return False;
     fuelForMass = int(math.floor(mass / 3) - 2)
     fuelForMassFuel = calcFuelForFuel(fuelForMass)
     return fuelForMass + fuelForMassFuel
@@ -31,17 +29,14 @@ def calcFuelForFuel(massFuel):
         tempVal = int(math.floor(fuelToCalc / 3) - 2)
         if tempVal > 0:
             fuelToCalc = tempVal
-            newFuel = newFuel + tempVal
+            newFuel += tempVal
         else: 
             fuelToCalc = 0
     return int(newFuel)
 
-fuelRequired = 0
-
-fileInput = open('input.txt' , "r")
-for val in fileInput:
-    val = int(val)
-    newVal = calcFuelForMass(val)
-    fuelRequired = fuelRequired + newVal
+with open('input.txt') as _file:
+    fuelRequired = 0
+    for val in _file:
+        fuelRequired += calcFuelForMass(int(val))
     
 print "Fuel needed: ", fuelRequired
