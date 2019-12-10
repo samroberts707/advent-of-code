@@ -1,4 +1,28 @@
-"""
+--- Day 1: The Tyranny of the Rocket Equation ---
+
+Santa has become stranded at the edge of the Solar System while delivering presents to other planets! To accurately calculate his position in space, safely align his warp drive, and return to Earth in time to save Christmas, he needs you to bring him measurements from fifty stars.
+
+Collect stars by solving puzzles. Two puzzles will be made available on each day in the Advent calendar; the second puzzle is unlocked when you complete the first. Each puzzle grants one star. Good luck!
+
+The Elves quickly load you into a spacecraft and prepare to launch.
+
+At the first Go / No Go poll, every Elf is Go until the Fuel Counter-Upper. They haven't determined the amount of fuel required yet.
+
+Fuel required to launch a given module is based on its mass. Specifically, to find the fuel required for a module, take its mass, divide by three, round down, and subtract 2.
+
+For example:
+
+    For a mass of 12, divide by 3 and round down to get 4, then subtract 2 to get 2.
+    For a mass of 14, dividing by 3 and rounding down still yields 4, so the fuel required is also 2.
+    For a mass of 1969, the fuel required is 654.
+    For a mass of 100756, the fuel required is 33583.
+
+The Fuel Counter-Upper needs to know the total fuel requirement. To find it, individually calculate the fuel needed for the mass of each module (your puzzle input), then add together all the fuel values.
+
+What is the sum of the fuel requirements for all of the modules on your spacecraft?
+
+Your puzzle answer was 3478233.
+
 --- Part Two ---
 
 During the second Go / No Go poll, the Elf in charge of the Rocket Equation Double-Checker stops the launch sequence. Apparently, you forgot to include additional fuel for the fuel you just added.
@@ -12,31 +36,7 @@ So, for each module mass, calculate its fuel and add it to the total. Then, trea
     The fuel required by a module of mass 100756 and its fuel is: 33583 + 11192 + 3728 + 1240 + 411 + 135 + 43 + 12 + 2 = 50346.
 
 What is the sum of the fuel requirements for all of the modules on your spacecraft when also taking into account the mass of the added fuel? (Calculate the fuel requirements for each module separately, then add them all up at the end.)
-"""
 
-import math
+Your puzzle answer was 5214475.
 
-def calcFuelForMass(mass):
-    fuelForMass = int(math.floor(mass / 3) - 2)
-    fuelForMassFuel = calcFuelForFuel(fuelForMass)
-    return fuelForMass + fuelForMassFuel
-
-def calcFuelForFuel(massFuel):
-    newFuel = 0
-    fuelToCalc = massFuel
-    tempVal = 0
-    while fuelToCalc > 0:
-        tempVal = int(math.floor(fuelToCalc / 3) - 2)
-        if tempVal > 0:
-            fuelToCalc = tempVal
-            newFuel += tempVal
-        else: 
-            fuelToCalc = 0
-    return int(newFuel)
-
-with open('input.txt') as _file:
-    fuelRequired = 0
-    for val in _file:
-        fuelRequired += calcFuelForMass(int(val))
-    
-print "Fuel needed: ", fuelRequired
+Both parts of this puzzle are complete! They provide two gold stars: :star::star:
