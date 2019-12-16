@@ -12,12 +12,15 @@ def checkRepeat(val):
             return True
 
 def checkDoubleRepeat(val):
-    for valOne, valTwo, valThree in zip(val, val[1:], val[2:]):
-        if valOne == valTwo == valThree:
-            return False
-        elif valOne == valTwo or valOne == valThree or valTwo == valThree:
-            return True
-        
+    repeat_count = 0
+    for numberOne, numberTwo in zip(val, val[1:]):
+        if numberOne == numberTwo:
+            repeat_count += 1
+        else:
+            if repeat_count == 1:
+                return True
+            repeat_count = 0
+    return repeat_count == 1
 
 passwordCount = 0
 
@@ -26,6 +29,5 @@ for i in range(startRange, endRange):
     if checkIncrement(i):
         if checkDoubleRepeat(i):
             passwordCount += 1
-            print i
 
 print 'Password Count:', passwordCount

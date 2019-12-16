@@ -35,4 +35,8 @@ Given this additional criterion, but still ignoring the range rule, the followin
 
 **How many different passwords** within the range given in your puzzle input meet all of the criteria?
 
-Your puzzle input is still 240298-784956.
+Your puzzle input is still `240298-784956`.
+
+Your puzzle answer was `748`.
+
+Both parts of this puzzle are complete! They provide two gold stars: :star::star:
