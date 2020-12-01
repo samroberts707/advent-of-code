@@ -6,7 +6,9 @@ for firstVal in entries:
     for secondVal in entries:
         if (2020 - firstVal - secondVal) in entries:
             answerTwo = firstVal * secondVal * (2020 - firstVal - secondVal)
+            # Answer Two
+            print("Three entries that add to 2020 are:", firstVal, ', ', secondVal, ' and ', (2020 - firstVal - secondVal), '. Multiplied = ', answerTwo)
             break
 
-# Answer Two
-print("Three entries that add to 2020 are:", firstVal, ', ', secondVal, ' and ', 2020 - firstVal, '. Multiplied = ', answerTwo)
+
+
