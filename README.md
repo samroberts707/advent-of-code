@@ -9,4 +9,4 @@ There will be 2 challenges released everyday, but you can only get access to the
 
 2019: 6
 
-2020: 5
+2020: 6
