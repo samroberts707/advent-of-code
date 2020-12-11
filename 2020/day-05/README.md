@@ -33,8 +33,8 @@ Every seat also has a unique **seat ID**: multiply the row by 8, then add the co
 
 Here are some other boarding passes:
 
-`BFFFBBFRRR`: row `70`, column `7`, seat ID `567`.
-`FFFBBBFRRR`: row `14`, column `7`, seat ID `119`.
-`BBFFBBFRLL`: row `102`, column `4`, seat ID `820`.
+- `BFFFBBFRRR`: row `70`, column `7`, seat ID `567`.
+- `FFFBBBFRRR`: row `14`, column `7`, seat ID `119`.
+- `BBFFBBFRLL`: row `102`, column `4`, seat ID `820`.
 
 As a sanity check, look through your list of boarding passes. **What is the highest seat ID on a boarding pass?**
