@@ -12,3 +12,5 @@ There will be 2 challenges released everyday, but you can only get access to the
 2020: 9
 
 2021: 5
+
+2022: 1
