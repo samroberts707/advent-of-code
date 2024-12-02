@@ -17,4 +17,4 @@ There will be 2 challenges released everyday, but you can only get access to the
 
 2023: 4
 
-2024: 2
+2024: 3
