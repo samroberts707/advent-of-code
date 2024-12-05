@@ -7,14 +7,11 @@ There will be 2 challenges released everyday, but you can only get access to the
 
 ## ⭐ Stars ⭐
 
-2019: 6
-
-2020: 9
-
-2021: 5
-
-2022: 4
-
-2023: 4
-
-2024: 4
+| Year | Stars |
+| :--- | :---: |
+| 2019 | 6     |
+| 2020 | 9     |
+| 2021 | 5     |
+| 2022 | 4     |
+| 2023 | 4     |
+| 2024 | 4     |
